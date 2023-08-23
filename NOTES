@@ -1,0 +1,35 @@
+mysql username-root
+mysql password-root
+dependencey-mysql,spring web(used to connect web),spring jpa(CURD),Lombok(getter setter ...)
+Exception Handler is not corved timestap@3.10
+---------------------------------------------------------------------------------------------------------------------------------------------------
+Spring Boot:
+ @Compount
+        -> used for saying that to springboot which is used to use this class
+ @Autowire
+        -> used for creating class accessing the class without object
+--------------------------------------------------------------------------------------------------------------------------------------------------
+Bean factory:
+        ->replaced as Application context is a interface which calls the class nanmed as classpathXml used to pas the xml to that class.
+--------------------------------------------------------------------------------------------------------------------------------------------------
+Spring container:
+        ->is collection of object if we declare Autowired spring check the and stored the object in spring container~it is nothing but it is
+container which have object.
+--------------------------------------------------------------------------------------------------------------------------------------------------
+Scope:Single ton, Prototype
+        ->If we create n times object with Singleton it will create only one instaance object. It declare in xml scope:"singleton".
+        ->If we create n times object with prototype it will create diffent instaance object.It is declare in xml scope:"Prototype".
+--------------------------------------------------------------------------------------------------------------------------------------------------
+Q/A
+Component Scanner
+Invegengentation of controller
+Dependance Injuction
+--------------------------------------------------------------------------------------------------------------------------------------------------
+@RestController
+    ->it return as response body
+    ->used in class
+@Request mapping
+    ->used as give request to the locolhost value="/" REQUEST.GET
+@GetMapping
+    ->used as request to the server
+--------------------------------------------------------------------------------------------------------------------------------------------------
