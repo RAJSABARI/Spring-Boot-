@@ -27,7 +27,7 @@ public class DepartmentServiceImpl {
     public Optional<Department> fetchdepartmentbyId(Long departmentid) {
         Optional<Department> department = departmentRepository.findById(departmentid);
 
-        if(fetchdepartmentbyId(departmentid).isPresent()){
+        if(department.isPresent()){
         return department;}
         else{
             return Optional.empty();
@@ -73,6 +73,10 @@ public class DepartmentServiceImpl {
 
     public List<Department> findByDepartmentIdBetween(Long departmentid, Long departmentid1) {
         return departmentRepository.findByDepartmentIdBetween(departmentid, departmentid1);}
+
+    public List<Department> random(Long l) {
+        return departmentRepository.random(l);
+    }
     //->alter code for fetching id between  <--
 //     Long a= departmentid;
 //    Long b=departmentid1;

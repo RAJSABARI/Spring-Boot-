@@ -26,4 +26,5 @@ public class Department {
     private String departmentAddress;
     private String departmentCode;
 
+
 }

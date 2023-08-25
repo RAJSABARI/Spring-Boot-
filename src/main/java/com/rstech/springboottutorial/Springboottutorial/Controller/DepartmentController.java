@@ -22,7 +22,7 @@ public class DepartmentController {
     @PostMapping("/department")
     public Department savedepartment(@Valid @RequestBody Department department) {
 
-             return departmentService.savedepartment(department);
+        return departmentService.savedepartment(department);
 
     }
 
@@ -33,17 +33,13 @@ public class DepartmentController {
 
     @GetMapping("/department/{id}")
     public Optional<Department> fetchdepartmentbyId(@PathVariable("id") Long departmentid) {
-            return departmentService.fetchdepartmentbyId(departmentid);
+        return departmentService.fetchdepartmentbyId(departmentid);
+
     }
 
     @DeleteMapping("/department/{id}")
     public Optional<Department> deteledepartment(@PathVariable("id") Long departmentid) {
-        if (departmentService.fetchdepartmentbyId(departmentid).isPresent()) {
-            return departmentService.deletedepartment(departmentid);
-        } else {
-            return Optional.empty();
-        }
-
+        return departmentService.deletedepartment(departmentid);
     }
 
     @PutMapping("/department/{id}")
@@ -64,5 +60,9 @@ public class DepartmentController {
 
     }
 
+    @PostMapping("/departmentt")
+    public List<Department> random(@RequestParam Long l) {
+        return departmentService.random(l);
 
+    }
 }

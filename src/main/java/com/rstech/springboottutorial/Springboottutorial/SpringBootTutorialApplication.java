@@ -10,7 +10,7 @@ import org.springframework.context.ApplicationContext;
 @SpringBootApplication
 public class SpringBootTutorialApplication {
 
-	public static void main(String[] args) {//3.02
+	public static void main(String[] args) {
 		SpringApplication.run(SpringBootTutorialApplication.class, args);
 	}
 

@@ -13,5 +13,6 @@ public interface DepartmentRepository extends JpaRepository<Department,Long> {
    // @Query(value = "Select * from department where department_id between ?1 and  ?2",nativeQuery = true)[used to fetch all between values,ex:1 to 10=a,2,3,4,5,6,7,8,9,10]
 //this is for findbyidbetter
     public List<Department> findByDepartmentIdBetween(Long departmentid, Long departmentid1);
-
+@Query(value = "select  * FROM  department  ORDER BY RAND()   LIMIT ?1" ,nativeQuery = true )
+    List<Department> random(Long l);
 }

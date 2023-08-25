@@ -2,6 +2,7 @@ mysql username-root
 mysql password-root
 dependencey-mysql,spring web(used to connect web),spring jpa(CURD),Lombok(getter setter ...)
 Exception Handler is not corved timestap@3.10
+Unit test is not corvedd timestap @3.27.30 to 3.50.29
 ---------------------------------------------------------------------------------------------------------------------------------------------------
 Spring Boot:
  @Compount
